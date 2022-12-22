@@ -16,3 +16,6 @@ Cargo.lock
 # Unescessary code editors folders
 .vscode/
 .idea/
+
+# dist
+dist/
