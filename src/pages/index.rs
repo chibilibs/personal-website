@@ -37,7 +37,7 @@ pub fn Index() -> Html {
             <div class="content about-me">
                 <div class="bg-about-me">
                     <h2>{"let about_me = r#''"}</h2>
-                    <p>{"Name: Guilherme de Oleiveira Menezes"}</p>
+                    <p>{"Name: Guilherme de Ole\iveira Menezes"}</p>
                     <p>{"Nickname: thechibbis"}</p>
                     <br/>
                     <p>{"Description: I'm a brazilian Rust developer. I'm currently working on my personal projects and seeking knowledge especially on back-end"}</p>
