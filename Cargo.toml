@@ -9,3 +9,5 @@ edition = "2021"
 yew = { version = "0.20.0", features = ["csr"] }
 tracing = "0.1.37"
 tracing-subscriber = "0.3.16"
+wasm-bindgen = "0.2.83"
+web-sys = { version = "0.3.60", features = ["console", "Document", "HtmlElement", "MouseEvent", "DomRect", "ScrollToOptions", "EventListener", "css"] }
