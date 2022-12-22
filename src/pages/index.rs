@@ -1,7 +1,15 @@
+use web_sys::{window, ScrollToOptions};
 use yew::prelude::*;
 
 #[function_component]
 pub fn Index() -> Html {
+
+    fn go_top_btn() {
+        let mut options = ScrollToOptions::new();
+        options.top(0.0);
+        window().unwrap().scroll_to_with_scroll_to_options(&options);
+    }
+
     const ASCII: &str = "\
 ⣿⣿⣿⣿⣯⣿⣿⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠈⣿⣿⣿⣿⣿⣿⣆⠄
 ⢻⣿⣿⣿⣾⣿⢿⣢⣞⣿⣿⣿⣿⣷⣶⣿⣯⣟⣿⢿⡇⢃⢻⣿⣿⣿⣿⣿⢿⡄
@@ -29,7 +37,7 @@ pub fn Index() -> Html {
             <div class="content about-me">
                 <div class="bg-about-me">
                     <h2>{"let about_me = r#''"}</h2>
-                    <p>{"Name: Guilherme de Oliveira Menezes"}</p>
+                    <p>{"Name: Guilherme de Oleiveira Menezes"}</p>
                     <p>{"Nickname: thechibbis"}</p>
                     <br/>
                     <p>{"Description: I'm a brazilian Rust developer. I'm currently working on my personal projects and seeking knowledge especially on back-end"}</p>
@@ -41,6 +49,7 @@ pub fn Index() -> Html {
             </div>
             <div class="content github-projects text-github"></div>
             <div class="content github-projects"></div>
+            <button id="btn" onclick={|_|go_top_btn()}>{"↑"}</button>
         </section>
     }
 }

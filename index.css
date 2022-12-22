@@ -11,6 +11,7 @@
 
 html {
     background-color: #131313;
+    scroll-behavior: smooth;
 }
 
 .brsmall {
@@ -61,4 +62,19 @@ html {
     padding: 20px 30px 20px 30px;
     border-radius: 20px;
     background-color: #17181a;
+}
+
+#btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 35%;
+
+    font-size: 23px;
+    border-color: #17181a;
+    background-color: #17181a;
+    opacity: 0.5;
 }
