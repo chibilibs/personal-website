@@ -36,6 +36,7 @@ html {
 .ascii {
     font-size: 15px;
     white-space: pre;
+    line-height: 1.5;
 }
 
 .about-me {
