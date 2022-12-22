@@ -3,17 +3,13 @@ use yew::prelude::*;
 
 #[function_component]
 pub fn Index() -> Html {
-
     fn go_top_btn() {
         let mut options = ScrollToOptions::new();
         options.top(0.0);
         window().unwrap().scroll_to_with_scroll_to_options(&options)
     }
 
-    fn on_window_load() {
-        
-    }
-
+    fn on_window_load() {}
 
     const ASCII: &str = "\
 ⣿⣿⣿⣿⣯⣿⣿⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠈⣿⣿⣿⣿⣿⣿⣆⠄
