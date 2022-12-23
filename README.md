@@ -1,6 +1,8 @@
 # personal-website
 
-if you want to run the website just run te folowing command:
+if you want to run the website you will need to install <a href="https://yew.rs/docs/getting-started/introduction#install-webassembly-target">trunk and wasm target</a><br>
+
+After it you can run with:
 `trunk serve`
 
-after it you can acess the website trought `http://127.0.0.1:8080`
+you can acess the website trought: `http://127.0.0.1:8080`
