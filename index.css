@@ -78,3 +78,32 @@ html {
     background-color: #17181a;
     opacity: 0.5;
 }
+
+/* syntax highlight  */
+.text {
+	color: #eaea95;
+}
+
+.let {
+	color: #ae81ff;
+}
+
+.about_me {
+	color: #8cc85f;
+}
+
+.equals {
+	color: #ff5454;
+}
+
+.r {
+	color: #36c692;
+}
+
+.quotes {
+	color: #c2c292;
+}
+
+.fields_keyword {
+	color: #e6e67f;
+}
