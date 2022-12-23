@@ -51,9 +51,6 @@ pub fn Index() -> Html {
                     <p class="text">
                         <span class="fields_keyword">{"Nickname:"}</span>
                         {" thechibbis"}</p>
-                    <h2>{"let about_me = r#''"}</h2>
-                    <p>{"Name: Guilherme de Ole\iveira Menezes"}</p>
-                    <p>{"Nickname: thechibbis"}</p>
                     <br/>
                     <p class="text">
                         <span class="fields_keyword">{"Description:"}</span>
