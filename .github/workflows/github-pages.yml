@@ -42,8 +42,8 @@ jobs:
               run: trunk build
             - name: delete unescessary folders and files
               run: "rm -r Cargo.lock Cargo.toml README.md index.css  index.html src target"
-            - name: move all dist to root
-              run: "mv dist/* . && rm -r dist"
+            - name: rename dist folder to _site
+              run: "mv dist/ _site/"
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1 
             - name: Deploy to GitHub Pages
