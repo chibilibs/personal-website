@@ -43,11 +43,11 @@ jobs:
             - name: delete unescessary folders and files
               run: "rm -r Cargo.lock Cargo.toml README.md index.css  index.html src target"
             - name: fix css links
-              run: sed -i 's/\/\(.*\).css/\/personal-website\/\1.css/g'
+              run: sed -i 's/\/\(.*\).css/\/personal-website\/\1.css/g dist/index.html'
             - name: fix js links
-              run: sed -i 's/\/\(.*\).js/\/personal-website\/\1.js/g'
+              run: sed -i 's/\/\(.*\).js/\/personal-website\/\1.js/g dist/index.html'
             - name: fix wasm links
-              run: sed -i 's/\/\(.*\).wasm/\/personal-website\/\1.wasm/g'
+              run: sed -i 's/\/\(.*\).wasm/\/personal-website\/\1.wasm/g dist/index.html'
             - name: rename dist folder to _site
               run: "mv dist/ _site/"
             - name: Upload artifact
